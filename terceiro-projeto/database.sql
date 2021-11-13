@@ -45,3 +45,10 @@ SELECT * FROM team;
 UPDATE team SET Nome = "Rhaissa G. Marques" WHERE Id = 4;
 
 DELETE FROM team WHERE Id = 5;
+
+CREATE TABLE log_in (
+    Id = int NOT NULL auto_increment,
+    Email varchar(50) NOT NULL,
+    Senha char(6) NOT NULL,
+    primary key (Id),
+);

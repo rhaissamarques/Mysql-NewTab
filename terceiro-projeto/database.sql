@@ -58,3 +58,15 @@ INSERT INTO log_in (Email, Senha) values ("newtab@academy.com", "123456");
 SELECT * FROM log_in;
 
 UPDATE log_in SET Senha = "654321" WHERE Id = 1;
+
+CREATE TABLE post_tweet (
+    Id_post int NOT NULL auto_increment,
+    Imagem,
+    Nome varchar(150) NOT NULL,
+    User varchar(50) NOT NULL,
+    Conteudo_tweet varchar(280),
+    Data_post date,
+    Hora_post time,
+    link varchar(500), 
+    primary key (Id)
+);

@@ -70,3 +70,11 @@ CREATE TABLE post_tweet (
     link varchar(500), 
     primary key (Id)
 );
+
+SELECT * FROM post_tweet;
+
+INSERT INTO post_tweet (Imagem, Nome, User, Conteudo_tweet, Data_post, Hora_post, link) values ("testeImagem.img", "Rhaissa", "@rhaissagsm", "Conteúdo teste para tweet", NOW());
+
+UPDATE post_tweet SET Nome = "Rhaissa Marques" WHERE Id = 1;
+
+DELETE FROM post_tweet WHERE Id = 1;

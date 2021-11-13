@@ -21,3 +21,15 @@ SELECT * FROM post_on_twitter;
 UPDATE post_on_twitter SET Hashtag = "homem de ferro" WHERE Id = 4;
 
 DELETE FROM post_on_twitter WHERE Id = 1;
+
+CREATE TABLE team (
+    Id int NOT NULL auto_increment,
+    Squad int NOT NULL,
+    img_perfil NOT NULL,
+    Nome varchar(100) NOT NULL,
+    Descricao varchar(300),
+    github varchar(300),
+    email varchar(50),
+    linkedin varchar(100),
+    primary key (Id)
+);

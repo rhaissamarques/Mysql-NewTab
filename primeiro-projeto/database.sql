@@ -13,6 +13,8 @@ CREATE TABLE transacao (
 
 INSERT INTO transacao (tipo, nome, valor, data_cadastro) values ("compra", "Headfone", +100.00, NOW());
 INSERT INTO transacao (tipo, nome, valor, data_cadastro) values ("venda", "Mouse", -60.00, NOW());
+INSERT INTO transacao (tipo, nome, valor, data_cadastro) values ("compra", "Smartphone", +3000.00, NOW());
+INSERT INTO transacao (tipo, nome, valor, data_cadastro) values ("venda", "Carro", -60000.00, NOW());
 
 SELECT * from transacao order by data_cadastro asc;
 SELECT sum(valor) from transacao;

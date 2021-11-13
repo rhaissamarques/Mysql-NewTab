@@ -72,3 +72,11 @@ INSERT INTO cartao (Numero, Cvv, Data_de_expiracao, Valido, Data_de_cadastro) va
 INSERT INTO cartao (Numero, Cvv, Data_de_expiracao, Valido, Data_de_cadastro) values (4111111111111234, 123, "01/20", false, NOW());
 
 SELECT * FROM cartao WHERE Valido=true order by Data_de_cadastro;
+
+INSERT INTO transacao (Id_usuario, Id_cartao, Valor, Data_de_cadastro) values ("1", "1", "500.00", NOW());
+INSERT INTO transacao (Id_usuario, Id_cartao, Valor, Data_de_cadastro) values ("2", "2", "300.00", NOW());
+
+SELECT * FROM 
+    transacao INNER JOIN usuario ON 
+    transacao.Id_usuario = usuario.Id INNER JOIN cartao ON 
+    transacao.Id_cartao=cartao.Id ORDER BY Data_de_cadastro asc;

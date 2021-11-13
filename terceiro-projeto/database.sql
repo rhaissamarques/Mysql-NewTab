@@ -52,3 +52,9 @@ CREATE TABLE log_in (
     Senha char(6) NOT NULL,
     primary key (Id),
 );
+
+INSERT INTO log_in (Email, Senha) values ("newtab@academy.com", "123456");
+
+SELECT * FROM log_in;
+
+UPDATE log_in SET Senha = "654321" WHERE Id = 1;

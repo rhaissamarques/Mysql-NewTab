@@ -33,3 +33,15 @@ CREATE TABLE team (
     linkedin varchar(100),
     primary key (Id)
 );
+
+INSERT INTO team (Squad, img_perfil, Nome, Descricao, github, email, linkedin) values (5, "https://dl.airtable.com/.attachments/dd1455dbef53280fb7002b9a5c365375/f240050b/ZeckFrizon.jpg", "Ezequiel Frizon", "Desenvolvedor web Front-end. Apaixonado por programação e jogos.", "https://github.com/zeeckcwb", "ezqlcwb@hotmail.com", "https://www.linkedin.com/in/ezequiel-frizon/");
+INSERT INTO team (Squad, img_perfil, Nome, Descricao, github, email, linkedin) values (5, "https://dl.airtable.com/.attachments/3df0082a6546b8da44e03672aba13ba8/b91cb259/carlo.jpg", "Carlos Dantas", "Desenvolvedor Front-End. Aficionado por tecnologia e jogos de tabuleiro.", "https://github.com/carllos95", "carlos95rodrigo@hotmail.com", "https://www.linkedin.com/in/carlos-rodrigo-dantas/");
+INSERT INTO team (Squad, img_perfil, Nome, Descricao, github, email, linkedin) values (5, "https://dl.airtable.com/.attachments/d0f3007a66db7b4094b7cbd35a4801ce/59991a28/JoaoPaulo.jpg", "João Del Penho", "Desenvolvedor front-end, apaixonado por Esportes e aficionado por estatísticas.", "https://github.com/joaopaulodps", "joaopaulodps@gmail.com", "https://www.linkedin.com/in/joaopaulodelpenho/");
+INSERT INTO team (Squad, img_perfil, Nome, Descricao, github, email, linkedin) values (5, "https://dl.airtable.com/.attachments/c6e8f5a07f4dabede66165e243acf7e3/710b429c/IMG_38040.jpg", "Rhaissa Marques", "Arquiteta apaixonada por tecnologia e aprendendo cada dia mais.", "https://github.com/rhaissamarques", "rhaissa.marques@gmail.com", "https://www.linkedin.com/in/rhaissa-marques/");
+INSERT INTO team (Squad, img_perfil, Nome, Descricao, github, email, linkedin) values (5, "imagemTeste", "Pessoa teste", "Descrição teste", "github teste", "email teste", "linkedin teste");
+
+SELECT * FROM team;
+
+UPDATE team SET Nome = "Rhaissa G. Marques" WHERE Id = 4;
+
+DELETE FROM team WHERE Id = 5;

@@ -20,3 +20,14 @@ CREATE TABLE cartao (
     Data_de_cadastro date,
     primary key (Id) 
 );
+
+CREATE TABLE transacao ( 
+    Id int NOT NULL auto_increment, 
+    Id_usuario int NOT NULL, 
+    Id_cartao int NOT NULL, 
+    Valor decimal(20,2), 
+    Data_de_cadastro date,
+    primary key (Id),
+    foreign key (Id_usuario) references usuario(Id),
+    foreign key (Id_cartao) references cartao(Id),
+);
